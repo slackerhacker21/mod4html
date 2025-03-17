@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 4 HTML Assignment</title>
+  <style>
+    /* Style the navigation bar */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      background: #333;
+      text-align: center;
+    }
+    nav ul li {
+      display: inline;
+      margin: 10px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    /* Style the table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+
+    /* Style the form */
+    form {
+      margin-top: 20px;
+    }
+    input, textarea {
+      display: block;
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0;
+    }
+
+    /* Round border for image */
+    .rounded-image {
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Form -->
+  <section>
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" required></textarea>
+
+      <!-- Bonus: Radio Buttons -->
+      <p>How did you find us?</p>
+      <label><input type="radio" name="source" value="google"> Google</label>
+      <label><input type="radio" name="source" value="social"> Social Media</label>
+      <label><input type="radio" name="source" value="friend"> Friend</label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Product Table -->
+  <section>
+    <h2>Product List</h2>
+    <table>
+      <tr>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+      <tr>
+        <td>Product 1</td>
+        <td>$10</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Product 2</td>
+        <td>$20</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Product 3</td>
+        <td>$15</td>
+        <td>7</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Images -->
+  <section>
+    <h2>Images</h2>
+    <img src="https://placehold.co/300x200" alt="Placeholder Image">
+    <img src="https://placehold.co/300x200" alt="Rounded Image" class="rounded-image">
+  </section>
+
+</body>
+</html>
